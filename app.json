@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "sdkVersion": "44.0.0",
+    "name": "reportown",
+    "slug": "reportown",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./App/assets/logo.png",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./App/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080f26"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "buildNumber": "25.0.0",
+      "bundleIdentifier": "com.reportown.myapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Fotoğraf çeebilmek için kamera kullanımına izin vermeniz gerekmektedir."
+      },
+      "associatedDomains": ["webcredentials:www.google.com"]
+    },
+    "android": {
+      "versionCode": 25,
+      "package": "com.reportown.myapp"
+    },
+    "web": {
+      "favicon": "./App/assets/logo.png"
+    }
+  }
+}
